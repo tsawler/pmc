@@ -1,0 +1,299 @@
+#topBar{
+		background: url(/images/v_01.jpg) no-repeat; 
+		height: 63px; 
+		width: 740px;
+}
+#wrapper {
+	width:750px;
+	float:left;
+	margin-right:-173px;
+	margin-top: 15px;
+}
+#vIframe {
+	border: 1px solid silver; 
+	width: 500px;
+	height: 500px; 
+	z-index: 5;
+}
+#contentColumn {
+	background: url(/images/vlogo_faded.gif); 
+	background-repeat: no-repeat; 
+	background-position: center center;
+	margin-left:220px;
+	padding-bottom: 20px;
+	border-top: 1px solid white; /* to stop collapsing margins in Moz */
+	z-index: 9;
+}
+#navColumn {
+	width: 173px;
+	float: left;
+	background:#fff;
+	padding-left: 2px;
+	text-align: center;
+}
+#bottomBar {
+	margin: 0;
+	background: url(/images/v_03.jpg) no-repeat; 
+	clear: both;
+	height: 36px;
+	width: 740px;
+}
+#footer {
+	margin: 0;
+	width: 740px;
+	text-align: right;
+}
+#menuPosition{
+	position: relative;
+	left: 215px;
+	width: 500px;
+	top: 56px;
+}
+.menutext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        color: #4D6E71;
+}
+.collapse, .collapse td {
+	border:solid gray 1px; 
+	border-collapse:collapse;
+	color: #4d6e71;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	margin: 0;
+	padding: 4px;
+}
+.centerDiv {
+	position: absolute;
+	left: 50%;
+	margin: 0 0 0 -368px;
+	width: 736px;
+}
+.copyright {  
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px; 
+	font-weight: normal; 
+	color: #999999; 
+	line-height: 13px
+}
+.caution {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	font-weight: bold;
+	color: red;
+}
+.thinbox {
+	border-color: silver;
+	border-width: 1px;
+	border-style: solid;
+	padding: 3px;
+}
+.inputbox {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333333;
+	background: #E5E9F2;
+	border: 1px solid;
+}
+.inputbox form {
+	padding: 0; 
+	margin: 0; 
+	float: left; 
+	width: 96%;
+} 
+.modulebox {
+	border-color: #666;
+	border-width: 1px;
+	border-style: solid;
+	border-collapse:collapse;
+	padding: 0;
+	width: 100%;
+	margin: 0;
+}
+.newsbox {
+        border-color: #666;
+        border-width: 1px;
+        border-style: solid;
+        border-collapse:collapse;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        color: #4D6E71;
+}
+.moduletitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	width: 100%;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	background: #366;
+	padding: 2px;
+}
+.moduletext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	color: #4D6E71;
+	padding: 2px;
+}
+a.moduletext:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	color: #999999;
+}
+a.moduletext:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	color: #999999;
+}
+a.moduletext:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-decoration: underline;
+	font-style: normal;
+	font-weight: normal;
+	color: #f00;
+}
+a.moduletext:active {
+	color: red;
+}
+a.pub:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	color: #090;
+}
+a.pub:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	color: #090;
+}
+a.pub:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: underline;
+	font-style: normal;
+	font-weight: normal;
+	color: #f00;
+}
+a.pub:active {
+	color: red;
+}
+a.upub:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	color: #f00;
+}
+a.upub:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	color: #f00;
+}
+a.upub:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: underline;
+	font-style: normal;
+	font-weight: normal;
+	color: #090;
+}
+a.upub:active {
+        color: red;
+}
+a:active {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 
+	11px; font-style: normal; 
+	font-weight: normal; 
+	text-decoration: none;
+	color: #f00;
+}
+a:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	color: #FF6633;
+}
+a:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	color: #FF6633;
+}
+a:hover {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	text-decoration: underline; 
+	font-style: normal; 
+	font-weight: normal;
+	color: #f00;
+}
+.content {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	font-style: normal; 
+	font-weight: normal; 
+	text-decoration: none; 
+	color: #4D6E71; 
+	line-height: 16px; 
+	padding: 3px;
+}
+li {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        color: #4D6E71;
+        padding: 3px;
+}
+.title {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #42696d;
+}
+html, body {
+	background-color: white;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	height: 100%;
+} 

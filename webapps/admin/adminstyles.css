@@ -1,0 +1,420 @@
+.spaceonleft {
+	font-weight:400;
+	padding-left:3px;
+}
+
+.treenavpage {
+	font-size:0;
+	font-weight:400;
+	background-color:#dddddd;
+	padding-top:0;
+	padding-bottom:0;
+	padding-left:0;
+	padding-right:0;
+}
+
+.treetoplevel {
+	font-family:tahoma, arial;
+	font-size:8pt;
+	font-weight:700;
+	color:white;
+	background-color:#6699cc;
+	padding-top:0;
+	padding-bottom:0;
+	padding-left:5px;
+}
+
+.treelinkroll {
+	font-family:verdana,tahoma, arial;
+	font-size:8pt;
+	font-weight:400;
+	color:white;
+	background-color:#9999cc;
+	padding-top:0;
+	padding-bottom:2px;
+}
+
+.treelink {
+	font-family:verdana,tahoma, arial;
+	font-size:8pt;
+	font-weight:400;
+	text-decoration:underline;
+	color:#000066;
+	padding-top:0;
+	padding-bottom:2px;
+}
+
+.linkbold {
+	font-family:verdana,tahoma, arial;
+	font-size:8pt;
+	font-weight:800;
+	text-decoration:underline;
+	color:#000066;
+	padding-top:0;
+	padding-bottom:2px;
+}
+
+.qbelabel, .tabledatacheckbox {
+	font-family:tahoma, arial;
+	font-size:8pt;
+	font-weight:400;
+	color:#000066;
+	text-align:left;
+}
+
+.treetext {
+	font-family:tahoma, arial;
+	font-size:8pt;
+	font-weight:700;
+	color:navy;
+}
+
+.titlebar {
+	font-family:tahoma, arial;
+	font-size:9pt;
+	font-weight:700;
+	background-color:#c8ceeb;
+	padding-bottom:1px;
+}
+
+.title {
+	font-family:tahoma, arial;
+	font-size:8pt;
+	font-weight:700;
+	color:#000066;
+	padding-bottom:0;
+}
+
+.tablegrid {
+	font-size:0;
+	font-weight:400;
+	background-color:gray;
+}
+
+.rowheader, .rowheader td, .rowheader tr {
+	font-weight:400;
+	background-color:#dbdeee;
+}
+
+.tableheader, .tableheader td, .tableheader tr {
+	font-family:tahoma, arial;
+	font-size:8pt;
+	font-weight:400;
+	color:#000066;
+	text-align:center;
+	background-color:#eeeeee;
+}
+
+.tableheader2 {
+	font-family:tahoma, arial;
+	font-size:8pt;
+	font-weight:400;
+	color:#000066;
+	text-align:left;
+	background-color:#dddddd;
+}
+
+.tableselectall {
+	font-family:wingdings;
+	font-size:8pt;
+	font-weight:400;
+	color:#000066;
+	text-align:center;
+}
+
+.rowodd {
+	font-weight:400;
+	background-color:white;
+}
+
+.tabledata, .tabledata td {
+	font-family:tahoma, arial;
+	font-size:8pt;
+	font-weight:400;
+	color:#000066;
+	text-align:left;
+	padding-top:0;
+	padding-bottom:0;
+	padding-left:2px;
+	background:#dddddd;
+}
+
+.tabledatacollapse, .tabledatacollapse td {
+	font-family:tahoma, arial;
+	font-size:8pt;
+	font-weight:400;
+	color:#000066;
+	text-align:left;
+	padding-top:0;
+	padding-bottom:0;
+	padding-left:2px;
+	border:solid gray 1px;
+	border-collapse:collapse;
+	background:transparent;
+}
+
+tr.odd:hover, tr.even:hover {
+	background:#eee;
+}
+
+.rel {
+	POSITION:relative;
+	width:100%;
+}
+
+.abs {
+	POSITION:absolute;
+	width:100%;
+}
+
+.right {
+	text-align:right;
+}
+
+.left {
+	text-align:left;
+}
+
+.center {
+	text-align:center;
+}
+
+.collapse, .collapse td {
+	border:solid gray 1px;
+	border-collapse:collapse;
+	color:#4d6e71;
+	font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+	font-weight:normal;
+	margin:0;
+	padding:0px;
+}
+
+.inputbox {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color:#333333;
+	background:#E5E9F2;
+	border:1px solid;
+}
+
+.inputbox form {
+	padding:0;
+	margin:0;
+	float:left;
+	width:96%;
+}
+
+a:link, a:visited {
+	text-decoration:underline;
+	color:#00e;
+}
+
+a:hover {
+	text-decoration:underline;
+	color:#f00;
+}
+
+.popup {
+	position:absolute;
+	visibility:hidden;
+	background-color:#A9B5FC;
+	width:240px;
+	BORDER-LEFT:1px solid gray;
+	BORDER-TOP:1px solid gray;
+	BORDER-BOTTOM:2px solid gray;
+	BORDER-RIGHT:2px solid gray;
+	PADDING:3px;
+	z-index:10;
+}
+
+span.pagebanner {
+	background-color:#eee;
+	border:1px dotted #999;
+	padding:2px 4px 2px 4px;
+	width:100%;
+	margin-top:10px;
+	display:block;
+	border-bottom:none;
+}
+
+div.exportlinks {
+	background-color:#eee;
+	border:1px dotted #999;
+	padding:2px 4px 2px 4px;
+	margin:10px 0 10px 0;
+	width:100%;
+}
+
+span.export {
+	padding:0 4px 1px 20px;
+	display:inline;
+	cursor:pointer;
+}
+
+span.pagelinks {
+	background-color:#eee;
+	border:1px dotted #999;
+	padding:2px 4px 2px 4px;
+	width:100%;
+	display:block;
+	border-top:none;
+	margin-bottom:5px;
+}
+
+span.excel {
+	background-image:url(/images/ico_file_excel.png);
+	background-repeat:no-repeat;
+}
+
+span.csv {
+	background-image:url(/images/ico_file_csv.png);
+	background-repeat:no-repeat;
+}
+
+span.xml {
+	background-image:url(/images/ico_file_xml.png);
+	background-repeat:no-repeat;
+}
+
+span.pdf {
+	background-image:url(/images/ico_file_pdf.png);
+	background-repeat:no-repeat;
+}
+
+.tabledatacollapse th {
+	font-family:tahoma, arial;
+	border:solid gray 1px;
+	font-size:8pt;
+	font-weight:800;
+	color:#000066;
+	text-align:left;
+	background-color:#eeeeee;
+}
+
+.stretcher {
+	background:none !important;
+}
+
+.handle {
+	cursor:move;
+	background-color:#ddd;
+	background-image:url(/images/handle.png);
+	background-position:top right;
+	background-repeat:repeat-y;
+}
+
+.menutitle {
+	cursor:pointer;
+	margin-bottom:5px;
+	background-color:#dbdeee;
+	color:#000000;
+	width:96%;
+	padding:1px;
+	text-align:left;
+	font-weight:400;
+	border:1px solid #dbdeee;
+}
+
+.submenu {
+	margin-bottom:0.5em;
+}
+
+.tabberlive .tabbertabhide, .tabberlive .tabbertab h2, .tabberlive .tabbertab h3 {
+	display:none;
+}
+
+.tabberlive {
+	margin-top:1em;
+}
+
+ul.tabbernav {
+	margin:0;
+	padding:3px 0;
+	border-bottom:1px solid #778;
+	font:bold 12px Verdana, sans-serif;
+}
+
+ul.tabbernav li {
+	list-style:none;
+	margin:0;
+	display:inline;
+}
+
+ul.tabbernav li a {
+	padding:3px 0.5em;
+	margin-left:3px;
+	border:1px solid #778;
+	border-bottom:none;
+	background:#DDE;
+	text-decoration:none;
+}
+
+ul.tabbernav li a:link {
+	color:#448;
+}
+
+ul.tabbernav li a:visited {
+	color:#667;
+}
+
+ul.tabbernav li a:hover {
+	color:#000;
+	background:#AAE;
+	border-color:#227;
+}
+
+ul.tabbernav li.tabberactive a {
+	background-color:#fff;
+	border-bottom:1px solid #fff;
+}
+
+ul.tabbernav li.tabberactive a:hover {
+	color:#000;
+	background:white;
+	border-bottom:1px solid white;
+}
+
+.tabberlive .tabbertab {
+	padding:5px;
+	border:1px solid #aaa;
+	border-top:0;
+}
+
+.tabberlive#tab2 .tabbertab {
+	height:200px;
+	overflow:auto;
+}
+
+a.headerlinks:link, a.headerlinks:visited, a.headerlinks:active {
+	color:white;
+	text-decoration:none;
+}
+
+a.headerlinks:hover {
+	text-decoration:underline;
+}
+
+legend {
+	padding:0.2em 0.5em;
+	border:none;
+	font-size:100%;
+	text-align:right;
+}
+
+label {
+	float:left;
+	width:35%;
+	margin-right:0.5em;
+	padding-top:0.5em;
+	text-align:right;
+	font-weight:normal;
+	cursor:pointer;
+}
+
+fieldset {
+	border:1px solid silver;
+	padding:1em;
+	font:90%/1 sans-serif;
+}

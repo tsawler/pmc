@@ -1,0 +1,260 @@
+#vIframe  {
+     border : 1px solid silver;
+     width : 500px;
+     height : 500px;
+     z-index : 5;
+}
+.menutext {
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 10px;
+     font-style : normal;
+     font-weight : normal;
+     text-decoration : none;
+     color : #4d6e71;
+}
+.collapse , .collapse td {
+     border : 1px solid gray;
+     border-collapse : collapse;
+     color : #4d6e71;
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 11px;
+     font-weight : normal;
+     margin : 0;
+     padding : 4px;
+}
+.caution {
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 11px;
+     font-weight : bold;
+     color : red;
+}
+.thinbox {
+     border-color : silver;
+     border-width : 1px;
+     border-style : solid;
+     padding : 3px;
+}
+.inputbox {
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 11px;
+     font-weight : normal;
+     color : #333;
+     background : #e5e9f2;
+     border : 1px solid;
+}
+.inputbox form {
+     padding : 0;
+     margin : 0;
+     float : left;
+     width : 96%;
+}
+.modulebox {
+     border-color : #666;
+     border-width : 1px;
+     border-style : solid;
+     border-collapse : collapse;
+     padding : 0;
+     width : 100%;
+     margin : 0;
+}
+.newsbox {
+     border-color : #666;
+     border-width : 1px;
+     border-style : solid;
+     border-collapse : collapse;
+     padding : 0;
+     width : 100%;
+     margin : 0;
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 10px;
+     font-style : normal;
+     font-weight : normal;
+     text-decoration : none;
+     color : #4d6e71;
+}
+.newsbox td {
+     border : 0;
+}
+.moduletitle {
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 11px;
+     width : 100%;
+     font-style : normal;
+     font-weight : bold;
+     text-decoration : none;
+     text-align : center;
+     color : #fff;
+     background : #366;
+     padding : 2px;
+}
+.moduletext {
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 10px;
+     font-style : normal;
+     font-weight : normal;
+     text-decoration : none;
+     color : #4d6e71;
+     padding : 2px;
+}
+a.moduletext:link {
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 10px;
+     font-style : normal;
+     font-weight : normal;
+     text-decoration : none;
+     color : #999;
+}
+a.moduletext:visited {
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 10px;
+     font-style : normal;
+     font-weight : normal;
+     text-decoration : none;
+     color : #999;
+}
+a.moduletext:hover {
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 10px;
+     text-decoration : underline;
+     font-style : normal;
+     font-weight : normal;
+     color : #f00;
+}
+a.moduletext:active {
+     color : red;
+}
+a.pub:link {
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 11px;
+     font-style : normal;
+     font-weight : normal;
+     text-decoration : none;
+     color : #090;
+}
+a.pub:visited {
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 11px;
+     font-style : normal;
+     font-weight : normal;
+     text-decoration : none;
+     color : #090;
+}
+a.pub:hover {
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 11px;
+     text-decoration : underline;
+     font-style : normal;
+     font-weight : normal;
+     color : #f00;
+}
+a.pub:active {
+     color : red;
+}
+a.upub:link {
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 11px;
+     font-style : normal;
+     font-weight : normal;
+     text-decoration : none;
+     color : #f00;
+}
+a.upub:visited {
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 11px;
+     font-style : normal;
+     font-weight : normal;
+     text-decoration : none;
+     color : #f00;
+}
+a.upub:hover {
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 11px;
+     text-decoration : underline;
+     font-style : normal;
+     font-weight : normal;
+     color : #090;
+}
+a.upub:active {
+     color : red;
+}
+a:active {
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 11px;
+     font-style : normal;
+     font-weight : normal;
+     text-decoration : none;
+     color : #f00;
+}
+a:link {
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 11px;
+     font-style : normal;
+     font-weight : normal;
+     text-decoration : underline;
+     color : #2f4b4e;
+}
+a:visited {
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 11px;
+     font-style : normal;
+     font-weight : normal;
+     text-decoration : underline;
+     color : #2f4b4e;
+}
+a:hover {
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 11px;
+     text-decoration : underline;
+     font-style : normal;
+     font-weight : normal;
+     color : #f00;
+}
+.content {
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 11px;
+     font-style : normal;
+     font-weight : normal;
+     text-decoration : none;
+     color : #4d6e71;
+     line-height : 16px;
+     padding : 3px;
+}
+.title {
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 12px;
+     font-style : normal;
+     font-weight : bold;
+     color : #42696d;
+}
+li {
+     font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif;
+     font-size : 11px;
+     font-style : normal;
+     font-weight : normal;
+     text-decoration : none;
+     color : #4d6e71;
+     padding : 3px;
+}
+#layouttable {
+     border : 0;
+     padding : 6px;
+     width : 100%;
+}
+.vertmenu {
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	color: #4D6E71;
+}
+vertmenu.table {
+	padding-left: 3px;
+}
+tr.vertmenu {
+	background: #ddd;
+}
+tr.vertmenu:hover {
+	background: #f00;
+	color: #fff;
+}

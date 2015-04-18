@@ -1,0 +1,88 @@
+<?xml version='1.0'?>
+<project name="verilionCMS" default="build_deploy" basedir="/Users/tcs/workspace/pacemakerclub.com/bin">
+	<property name="jarname" value="pmc.jar" />
+	<property name="vjarname" value="verilion.jar" />
+	<property name="host" value="192.168.0.100" />
+	<property name="passphrase" value="catnat!!" />
+	<property name="keyfile" value="/Users/tcs/.ssh/id_rsa" />
+	<property name="command" value="cp -f /home/tcs/pmc.jar /home/httpd/pacemakerclub.com/html/WEB-INF/lib/pmc.jar" />
+	<property name="vcommand" value="cp -f /home/tcs/verilion.jar /home/httpd/pacemakerclub.com/html/WEB-INF/lib/verilion.jar" />
+	<property name="basedir" value="/Users/tcs/workspace/pacemakerclub.com/bin" />
+	<property name="vbasedir" value="/Users/tcs/workspace/verilionCMS/bin" />
+	<property name="username" value="tcs" />
+	<property name="manifest" value="/Users/tcs/workspace/pacemakerclub.com/MANIFEST.MF" />
+	<property name="vmanifest" value="/Users/tcs/workspace/verilionCMS/MANIFEST.MF" />
+	<property name="tomcat.manager.url" value="http://manager.pacemakerclub.com:8082/manager" />
+	<property name="tomcat.manager.username" value="tcs" />
+	<property name="tomcat.manager.password" value="catnat!!" />
+	<property name="appserver.home" value="/Users/tcs/Applications/apache-tomcat-5.5.23" />
+	<property name="name" value="" />
+	
+	<target name="jar">
+		<jar jarfile="/Users/tcs/tmp/${jarname}" basedir="${basedir}" includes="**/*.class" manifest="${manifest}" />
+		<jar jarfile="/Users/tcs/tmp/${vjarname}" basedir="${vbasedir}" includes="**/*.class" manifest="${vmanifest}" />
+	</target>
+	<target name="deliver" depends="jar">
+		<scp file="/Users/tcs/tmp/${jarname}" keyfile="${keyfile}" passphrase="${passphrase}" todir="${username}@${host}:" trust="Yes" />
+		<scp file="/Users/tcs/tmp/${vjarname}" keyfile="${keyfile}" passphrase="${passphrase}" todir="${username}@${host}:" trust="Yes" />
+	</target>
+	<target name="replace" depends="deliver">
+		<sshexec command="${command}" host="${host}" keyfile="${keyfile}" passphrase="${passphrase}" trust="Yes" username="${username}" />
+		<sshexec command="${vcommand}" host="${host}" keyfile="${keyfile}" passphrase="${passphrase}" trust="Yes" username="${username}" />
+	</target>
+
+	<taskdef name="reload" classname="org.apache.catalina.ant.ReloadTask">
+		<classpath>
+			<path location="${appserver.home}\server\lib\catalina-ant.jar" />
+		</classpath>
+	</taskdef>
+	
+	<taskdef name="start" classname="org.apache.catalina.ant.StartTask">
+		<classpath>
+			<path location="${appserver.home}/server/lib/catalina-ant.jar" />
+		</classpath>
+	</taskdef>
+	
+	<taskdef name="stop" classname="org.apache.catalina.ant.StopTask">
+		<classpath>
+			<path location="${appserver.home}/server/lib/catalina-ant.jar" />
+		</classpath>
+	</taskdef>
+
+	<target name="reload" description="Reload application in Tomcat">
+		<reload 
+			url="${tomcat.manager.url}" 
+			username="${tomcat.manager.username}" 
+			password="${tomcat.manager.password}" 
+			path="/${name}"
+		/>
+	</target>
+	
+	<target name="build_deploy" depends="replace" description="Reload application in Tomcat">
+		<reload 
+			url="${tomcat.manager.url}" 
+			username="${tomcat.manager.username}" 
+			password="${tomcat.manager.password}" 
+			path="/${name}" 
+		/>
+	</target>
+
+	<target name="start" description="Start Tomcat application">
+		<start 
+			url="${tomcat.manager.url}" 
+			username="${tomcat.manager.username}" 
+			password="${tomcat.manager.password}" 
+			path="/${name}" 
+		/>
+	</target>
+
+	<target name="stop" description="Stop Tomcat application">
+		<stop 
+			url="${tomcat.manager.url}" 
+			username="${tomcat.manager.username}" 
+			password="${tomcat.manager.password}" 
+			path="/${name}" 
+		/>
+	</target>
+	
+</project>

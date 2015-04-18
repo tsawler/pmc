@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /members
+Disallow: /messages
+Disallow: /admin
+Disallow: /membergallery
+Allow: /
+

@@ -1,0 +1,9 @@
+
+Name: com/pmc/
+Specification-Title: PMC
+Specification-Vendor: Verilion Inc. http://www.verilion.com
+Specification-Version: 1.0
+Implementation-Title: com.pmc
+Implementation-Vendor: Verilion Inc.
+Implementation-Version: 1.00
+
