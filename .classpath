@@ -1,42 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="Java"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/iText-2.0.8.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/xml-apis-xerces-2.9.1.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/core-renderer.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/jsr311-api-1.0.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/json-1.0.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/jersey-bundle-1.0.2.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/postgresql-8.2-508.jdbc3.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/json_simple.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/dwr.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/imaging.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/oscache-2.2.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/ajaxtags-1.1.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/commons-validator-1.1.4.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/commons-lang-2.1.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/commons-logging-api.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/commons-logging.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/displaytag-1.0.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/FCKeditor-2.1.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/jakarta-oro-2.0.6.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/JavaAPI.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/log4j-1.2.8.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/commons-fileupload.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/jsp-api.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/servlet-api.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/jasperreports-0.6.1.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/activation.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/jxRowSet-1.0.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/commons-collections-testframework-3.0.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/lucene-1.3-final.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/commons-beanutils.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/commons-collections-3.0.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/commons-digester.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/junit.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/cos.jar"/>
-	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/verilionCMS/lib/mail.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/verilionCMS"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/activation.jar"/>
+	<classpathentry kind="lib" path="lib/ajaxtags-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-beanutils.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections-testframework-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-digester.jar"/>
+	<classpathentry kind="lib" path="lib/commons-fileupload.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-api.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="lib/commons-validator-1.1.4.jar"/>
+	<classpathentry kind="lib" path="lib/cos.jar"/>
+	<classpathentry kind="lib" path="lib/displaytag-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/dwr.jar"/>
+	<classpathentry kind="lib" path="lib/FCKeditor-2.1.jar"/>
+	<classpathentry kind="lib" path="lib/itext-1.3.2.jar"/>
+	<classpathentry kind="lib" path="lib/jakarta-oro-2.0.6.jar"/>
+	<classpathentry kind="lib" path="lib/jasperreports-0.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/JavaAPI.jar"/>
+	<classpathentry kind="lib" path="lib/jsp-api.jar"/>
+	<classpathentry kind="lib" path="lib/junit.jar"/>
+	<classpathentry kind="lib" path="lib/jxRowSet-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.8.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-1.3-final.jar"/>
+	<classpathentry kind="lib" path="lib/mail.jar"/>
+	<classpathentry kind="lib" path="lib/pg74jdbc3.jar"/>
+	<classpathentry kind="lib" path="lib/servlet-api.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/vms"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
