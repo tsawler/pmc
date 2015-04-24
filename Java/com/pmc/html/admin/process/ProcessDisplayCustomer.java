@@ -1,17 +1,3 @@
-//------------------------------------------------------------------------------
-//Copyright (c) 2004-2007 Verilion Inc.
-//------------------------------------------------------------------------------
-//Created on 2007-10-14
-//Revisions
-//------------------------------------------------------------------------------
-//$Log: ProcessDisplayCustomer.java,v $
-//Revision 1.2.2.2  2009/07/22 16:27:27  tcs
-//*** empty log message ***
-//
-//Revision 1.2.2.1  2007/10/22 14:12:31  tcs
-//Initial entry
-//
-//------------------------------------------------------------------------------
 package com.pmc.html.admin.process;
 
 import java.sql.Connection;
@@ -179,9 +165,12 @@ public class ProcessDisplayCustomer extends ProcessPage {
 								"$IMG$",
 								"<img src=\"/avatars/default_avatar.png\" height=\"48\" width=\"48\" alt=\"avatar image\" />");
 			else
-				MasterTemplate.searchReplace("$IMG$", (new StringBuilder(
-						"<img src=\"/avatars/")).append(avatar).append(
-						"\" alt=\"avatar image\" />").toString());
+				MasterTemplate.searchReplace(
+						"$IMG$",
+						(new StringBuilder("<img src=\"/avatars/"))
+								.append(avatar)
+								.append("\" alt=\"avatar image\" />")
+								.toString());
 			CtProvinceState myProvince = new CtProvinceState();
 			myProvince.setConn(conn);
 			rs = myProvince.getAllProvinceState();
@@ -257,24 +246,27 @@ public class ProcessDisplayCustomer extends ProcessPage {
 			MasterTemplate.searchReplace("$DDLBCAL$", theMenu);
 			i = 0;
 			theMenu = "<select class=\"inputbox\" name=\"device_type\">";
-			theMenu = (new StringBuilder(String.valueOf(theMenu))).append(
-					"<option value=\"").append(i).append("\"").toString();
+			theMenu = (new StringBuilder(String.valueOf(theMenu)))
+					.append("<option value=\"").append(i).append("\"")
+					.toString();
 			if (i == device_type)
 				theMenu = (new StringBuilder(String.valueOf(theMenu))).append(
 						" selected ").toString();
 			theMenu = (new StringBuilder(String.valueOf(theMenu))).append(
 					">&nbsp;</option>").toString();
 			i++;
-			theMenu = (new StringBuilder(String.valueOf(theMenu))).append(
-					"<option value=\"").append(i).append("\"").toString();
+			theMenu = (new StringBuilder(String.valueOf(theMenu)))
+					.append("<option value=\"").append(i).append("\"")
+					.toString();
 			if (i == device_type)
 				theMenu = (new StringBuilder(String.valueOf(theMenu))).append(
 						" selected ").toString();
 			theMenu = (new StringBuilder(String.valueOf(theMenu))).append(
 					">Pacemaker</option>").toString();
 			i++;
-			theMenu = (new StringBuilder(String.valueOf(theMenu))).append(
-					"<option value=\"").append(i).append("\"").toString();
+			theMenu = (new StringBuilder(String.valueOf(theMenu)))
+					.append("<option value=\"").append(i).append("\"")
+					.toString();
 			if (i == device_type)
 				theMenu = (new StringBuilder(String.valueOf(theMenu))).append(
 						" selected ").toString();
@@ -294,8 +286,10 @@ public class ProcessDisplayCustomer extends ProcessPage {
 			MasterTemplate.searchReplace("$BIO$", bio);
 			MasterTemplate.searchReplace("$MODEL$", model);
 			MasterTemplate.searchReplace("$CANCEL$", cancelPage);
-			MasterTemplate.searchReplace("$ID$", (new StringBuilder(String
-					.valueOf(customer_id))).toString());
+			MasterTemplate
+					.searchReplace("$ID$",
+							(new StringBuilder(String.valueOf(customer_id)))
+									.toString());
 			if (device_brand.startsWith("B"))
 				MasterTemplate.searchReplace(
 						"value=\"Boston Scientific/Guidant\">",
@@ -388,12 +382,11 @@ public class ProcessDisplayCustomer extends ProcessPage {
 					last_name, "string");
 			myTable.addUpdateFieldNameValuePair("customer_password", password,
 					"string");
-			myTable
-					.addUpdateFieldNameValuePair(
-							"customer_add_to_mailing_list",
-							(new StringBuilder(String
-									.valueOf(customer_add_to_mailing_list)))
-									.toString(), "int");
+			myTable.addUpdateFieldNameValuePair(
+					"customer_add_to_mailing_list",
+					(new StringBuilder(String
+							.valueOf(customer_add_to_mailing_list))).toString(),
+					"int");
 			myTable.addUpdateFieldNameValuePair("customer_active_yn",
 					customer_active_yn, "string");
 			myTable.addUpdateFieldNameValuePair("customer_access_level",
@@ -441,10 +434,10 @@ public class ProcessDisplayCustomer extends ProcessPage {
 					"int");
 			myTable.addUpdateFieldNameValuePair("bio", bio, "String");
 			myTable.addUpdateFieldNameValuePair("model", model, "String");
-			myTable
-					.addUpdateFieldNameValuePair("device_type",
-							(new StringBuilder(String.valueOf(device_type)))
-									.toString(), "int");
+			myTable.addUpdateFieldNameValuePair(
+					"device_type",
+					(new StringBuilder(String.valueOf(device_type))).toString(),
+					"int");
 			myTable.updateRecord();
 			Enumeration files = multi.getFileNames();
 			String filename = "";
@@ -461,12 +454,12 @@ public class ProcessDisplayCustomer extends ProcessPage {
 				Thumbnail myThumbNail = new Thumbnail();
 				String theResult = myThumbNail.createThumbnail(
 						(new StringBuilder(String.valueOf(thePath))).append(
-								filename).toString(), (new StringBuilder(String
-								.valueOf(SingletonObjects.getInstance()
-										.getSystem_path())))
-								.append("/avatars/").append("avatar_").append(
-										customer_id).append("_").append(
-										filename).toString(), 48);
+								filename).toString(),
+						(new StringBuilder(String.valueOf(SingletonObjects
+								.getInstance().getSystem_path())))
+								.append("/avatars/").append("avatar_")
+								.append(customer_id).append("_")
+								.append(filename).toString(), 48);
 				if (theResult.length() == 0) {
 					myTable.clearUpdateVectors();
 					myTable.setUpdateWhat("pmc_customer_extra");
@@ -486,8 +479,7 @@ public class ProcessDisplayCustomer extends ProcessPage {
 			}
 			hm.put("PRESERVEMSG", "TRUE");
 			session.setAttribute("Error", "Information updated.");
-			response
-					.sendRedirect("/customer/jpage/1/p/SearchCustomers/admin/1/content.do");
+			response.sendRedirect("/customer/jpage/1/p/SearchCustomers/admin/1/content.do");
 		} catch (Exception e) {
 			e.printStackTrace();
 			Errors.addError((new StringBuilder(
