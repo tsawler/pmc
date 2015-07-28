@@ -30,5 +30,6 @@
 	<classpathentry kind="lib" path="lib/pg74jdbc3.jar"/>
 	<classpathentry kind="lib" path="lib/servlet-api.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/vms"/>
+	<classpathentry kind="lib" path="/Users/tcs/Documents/workspace/pmc/lib/json_simple-1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
